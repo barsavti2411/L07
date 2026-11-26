@@ -1,0 +1,22 @@
+[project]
+name = "gmail-calendar"
+version = "0.1.0"
+description = "Local stdio MCP server for Gmail and Google Calendar using FastMCP"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "google-api-python-client>=2.100.0",
+    "google-auth>=2.23.0",
+    "google-auth-oauthlib>=1.1.0",
+    "mcp>=1.2.0,<2.0.0",
+    "tzdata>=2024.1",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

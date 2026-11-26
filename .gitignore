@@ -1,0 +1,39 @@
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+dist/
+build/
+
+# Sensitive credentials, tokens, API keys, and private configuration
+credentials.json
+token.json
+*credentials*.json
+*token*.json
+client_secret*.json
+*.pem
+*.key
+*.p12
+*.secret
+.env
+.env.*
+*.env
+.meetbridge/
+secrets/
+private/
+
+# Local IDE and MCP client configuration
+.vscode/
+.idea/
+.mcp.json
+*.local
+*.local.json
+mcp_config*.json
